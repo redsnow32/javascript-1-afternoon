@@ -18,7 +18,14 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+var isTyler = function (name) {
+  if(name==="Tyler"){
+    return true;
+  } else {
+    return false;
+  }
+}
+// isTyler(name);
 
 
 ////////// PROBLEM 2 //////////
@@ -28,8 +35,11 @@ var name = 'Tyler';
 */
 
 //Code Here
-
-
+function getName () {
+  var userName = prompt("Enter your name here.");
+  return userName;
+}
+// getName()
 
 ////////// PROBLEM 3 //////////
 
@@ -41,6 +51,9 @@ var name = 'Tyler';
 */
 
 //Code Here
+function welcome () {
+  alert("Welcome, " + getName());
+}
 
 
 
@@ -51,7 +64,7 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
+//Arguments are going to be passed into the parameters the function accepts.
 
 
 ////////// PROBLEM 5 //////////
@@ -61,7 +74,12 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
+// null
+// undefined
+// 0
+// ""
+// NaN
+// false
 
 
 ////////// PROBLEM 6 //////////
@@ -71,23 +89,25 @@ var name = 'Tyler';
 */
 
 //Code Here
-  
-
+function myName () {
+    return "Brandon Allred";
+  }
+// myName();
 
 /*
   Now save the function definition of myName into a new variable called newMyName
 */
 
 //Code Here
-
-
-
+function newMyName () {
+  return myName();
+}
 /*
   Now alert the result of invoking newMyName
 */
 
 // Code Here
-
+alert(newMyName());
 
 
 ////////// PROBLEM 7 //////////
@@ -97,6 +117,11 @@ var name = 'Tyler';
 */
 
 //Code Here
+function outerFn () {
+  return function () {
+    return "Brandon Allred";
+  }
+}
 
 
 
@@ -106,10 +131,11 @@ var name = 'Tyler';
 
 //Code Here
 
-
+var innerFn = outerFn();
 
 /* 
   Now invoke innerFn.
 */
 
 // Code Here
+innerFn;
